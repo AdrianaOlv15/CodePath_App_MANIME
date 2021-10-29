@@ -14,7 +14,6 @@ Original App Design Project - README Template
 This apps allow you to keep track of the episodes you have seen from your favorite anime and/or the chapters you have read of your favorite manga by providing you with checklists of all the anime episodes per season and/or all the manga chapters. Furthermore, this app provides a place called 'fandom' where you can post anything you want or see other people's posts related to a specific anime/manga.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Personal Logs / Entertainment
 - **Mobile:** This app will be primarly developed for smartphones, but could be extended to computers and even TV systems. 
 - **Story:** Provides full checklists for users to keep track of the anime episodes or manga chapters they have seen. In addition, allows users to share posts related to a specific anime/manga for other user to see. 
@@ -26,7 +25,6 @@ This apps allow you to keep track of the episodes you have seen from your favori
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
-
 **Required Must-have Stories**
 
 * Logging screen for users, with option to create a new account
@@ -44,7 +42,6 @@ This apps allow you to keep track of the episodes you have seen from your favori
 * User should be able to log off and log in and keep their settings the way they were and their checklists too. 
 
 **Optional Nice-to-have Stories**
-
 * Having the 'additional content section' for both anime and manga where user can see check lists for additional content outside the anime and the manga such as movies, ovas, light novels, special chapters. 
 * Allowing the user to change their username and profile picture.
 * Allosing the user to delete anime/manga of their list.
@@ -53,7 +50,6 @@ This apps allow you to keep track of the episodes you have seen from your favori
 * Providing the actual titles of episodes and chapters. 
 
 ### 2. Screen Archetypes
-
 * Login Screen
    * Allows user to log into their account
    * Allows user to create a new account
@@ -84,7 +80,6 @@ This apps allow you to keep track of the episodes you have seen from your favori
   
 
 ### 3. Navigation
-
 **Tab Navigation** (Tab to Screen)
 
 * HOME
