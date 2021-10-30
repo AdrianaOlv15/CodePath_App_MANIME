@@ -1,0 +1,29 @@
+Objects in our app:
+- Users
+	- Username
+	- Profie Picture
+	- Anime List
+	- Manga List
+
+- Posts 
+	ObjectID
+	Author
+	Image
+	Caption	
+	Created At
+	UpdateAt
+
+- Tab bar 
+  - Buttons (home, fandom, search, setting)
+  
+- Toddle Bar
+  - Buttons (ANIME/MANGA)
+
+- HOME - MyAnimeList 
+	- Images/Buttons
+
+- HOME - MyMangaList 
+	- Images/Buttons
+
+- SEARCH - list view
+	- Buttons/Titles 
