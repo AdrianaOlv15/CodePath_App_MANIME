@@ -131,10 +131,68 @@ This apps allow you to keep track of the chapters you have read of your favorite
 ### [BONUS] Interactive Prototype
 
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+* Manga Source
+	* String
+	* Contains a list of many mangas 
+
+* Fandom Post
+	* ObjectId
+		* String
+		* Unique id for the user post (default field)
+	* author
+		* Pointer to User
+		* Image author
+	* image
+		* File
+		* Image that user posts
+	* caption
+		* String
+		* Image caption by author
+	* createdAt
+		* DateTime
+		* Date when post is created (default field)
+* Manga
+	* MangaTitle
+		* String
+		* A manga’s title (will show in several screens)
+	* MangaImage
+		* File
+		* Picture of the 1st Volume
+	* MangaDescription
+		* String
+		* Description of the plot for a manga
+	* ChapterCount
+		* int
+		* Number of chapters in the manga
+
+* User
+	* UserName
+		* String
+		* A manga's title
+	* UserPic
+		* File
+		* Picture of the 1st Volume of manga
+	* UserMangaList
+		* String
+		* Contains the titles of every Manga the user likes
+	* UserMangaCount
+		* int
+		* Number of mangas the user has in their favorite 
+
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+* Home Screen 
+	* (GET/Read) Get’s the user’s manga list or count and creates the buttons for manga
+* Manga Chapters Checklist
+	* (GET/Read) Get the manga’s chapter list and creates a list on the screen with it
+* Fandom Screen
+	* (GET/Read) Get’s the user’s manga list or count and creates the buttons linked to manga fandoms
+* Fandom Feed Screen
+	* (Read/GET) Query all posts where user is author
+* Search Screen
+	* (GET/Read) Gets the lists of mangas and creates buttons for it
+* Manga Overview Screen
+	* (GET/Read) Gets a manga’s picture and description and displays it.
+* Setting Screen
+	* (GET) Gets the user’s picture and username. 
+
