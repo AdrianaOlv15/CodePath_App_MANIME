@@ -25,7 +25,6 @@ This apps allow you to keep track of the chapters you have read of your favorite
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
-### 1. User Stories (Required and Optional)
 **Required Must-have Stories**
 
 * Login Screen
