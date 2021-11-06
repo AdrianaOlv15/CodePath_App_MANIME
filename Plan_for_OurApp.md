@@ -11,43 +11,72 @@ Original App Design Project - README Template
 
 ## Overview
 ### Description
-This apps allow you to keep track of the episodes you have seen from your favorite anime and/or the chapters you have read of your favorite manga by providing you with checklists of all the anime episodes per season and/or all the manga chapters. Furthermore, this app provides a place called 'fandom' where you can post anything you want or see other people's posts related to a specific anime/manga.
+This apps allow you to keep track of the chapters you have read of your favorite manga by providing you with checklists of all the manga chapters. Furthermore, this app provides a place called 'fandom' where you can post anything you want or see other people's posts related to a specific manga.
 
 ### App Evaluation
 - **Category:** Personal Logs / Entertainment
 - **Mobile:** This app will be primarly developed for smartphones, but could be extended to computers and even TV systems. 
-- **Story:** Provides full checklists for users to keep track of the anime episodes or manga chapters they have seen. In addition, allows users to share posts related to a specific anime/manga for other user to see. 
+- **Story:** Provides full checklists for users to keep track of the manga chapters they have seen. In addition, allows users to share posts related to a specific manga for other user to see. 
 - **Market:** This app isn't limited to a specific audience. Any manga or anime fan is welcome to use it!
-- **Habit:** This app's use will vary according to the users tendencies of reading manga or watching anime. Some users like to watch/read daily so they will use it more. Other users, such as those all-caught in the animes or mangas watch/read only when new episodes/chapters come out (could be weekly or monthly). 
+- **Habit:** This app's use will vary according to the users tendencies of reading manga. Some users like to read daily so they will use it more. Other users, such as those all-caught in the manga read only when new chapters come out (could be weekly or monthly). 
 
-- **Scope:** First this app will only focus on helping users track the episodes they have watched or chapters they have read, and provide them a place to share posts related to the anime/manga. Aside from posts, the users can't really interact with one another, so a potential addition could be comments on posts, and even allowing users to send private messages among eachother. 
+- **Scope:** First this app will only focus on helping users track the chapters they have read, and provide them a place to share posts related to the manga. Aside from posts, the users can't really interact with one another, so a potential addition could be comments on posts, and even allowing users to send private messages among eachother. 
 
 ## Product Spec
 
 ### 1. User Stories (Required and Optional)
+### 1. User Stories (Required and Optional)
 **Required Must-have Stories**
 
-* Logging screen for users, with option to create a new account
-* User should be able to add anime or manga to their home screen using the search screen. 
-* User should be able to switch betweeen anime and manga in home screen.
-* When user click on an anime from home screen, season options should appear for each season of the anime. 
-* When user click on a season, they should see a list of all the episodes and their titles with an option to markoff. 
-* When user click on a manga, a check list of all the manga chapters should appear with their title and the option to mark off. 
-* In the FANDOM screen, the user should see FANDOM option related to the anime/manga they have on their home screen.
-* In the FANDOM screen, the user should be able to scroll through other user posts.
-* In the FANDOM screen, the user should be able to make a new post and see it on the thread of posts.
-* In the search screen the user should be able to see a list of different anime/manga and have the option to add it to their favorites list.
-* In the setting screen the user should be able to log off. 
-* User should be able to backtrack between screens.
-* User should be able to log off and log in and keep their settings the way they were and their checklists too. 
+* Login Screen
+	* User can enter username and a password 
+	* User can access their account by clicking ‘log in’ , if the account exist
+  * User can create an account by clicking ‘create account’ , if the account does not exist
+
+* Home Screen 
+	* Shows the users favorite mangas as buttons
+  * User can scroll if there’s multiple mangas in the screen
+  * If the user clicks on a manga button, it should bring the ‘Manga Chapters Checklist’ for the selected manga
+
+* Manga Chapters Checklist
+	* Shows a full list of all the manga chapters related to the manga selected by the user
+	* Each chapter is followed by a check icon that can be pressed by the user + changes!
+
+* Fandom Screen
+	* Shows ‘fandom’ buttons related to each of the user favorite mangas (on main screen)
+  * User can scroll if there’s multiple ‘fandom’ buttons in the screen
+  * If the user clicks on a ‘fandom’ buttons, it should bring the ‘Fandom Feed Screen’ for the selected manga
+
+* Fandom Feed Screen
+  * Shows post made by other people on this fandom feed
+  * Shows a button for user to make a post
+  * Brings a fragment up for user to make a post if button is clicked - user can enter text and image to publish
+
+* Search Screen
+	* Should show a list of many manga titles in alphabetical order (they act like buttons)
+  * User can scroll if there’s multiple ‘title’ buttons in the screen
+  * If the user clicks on a ‘title’ button, it should bring the ‘Manga Overview Screen’ for the selected tile
+
+* Manga Overview Screen
+	* Shows a picture of the 1st volume of the selected manga title  
+  * Shows the description of the selected manga title
+  * Shows a button for the user to add this manga as a favorite  (if they don’t have it)
+
+* Setting Screen
+	* Shows the user’s username
+	* Shows the user’s profile picture
+	* Shows a logout button (if clicked takes you back to the login screen) 
 
 **Optional Nice-to-have Stories**
-* Having the 'additional content section' for both anime and manga where user can see check lists for additional content outside the anime and the manga such as movies, ovas, light novels, special chapters. 
-* Allowing the user to change their username and profile picture.
-* Allosing the user to delete anime/manga of their list.
-* Having a wide range of anime and manga options for user to add to their favorites. 
-* Allowing the user to not have to scroll down to the checklist place their left off. 
-* Providing the actual titles of episodes and chapters. 
+	* Having the same sections for Search and Main Screen but for anime!
+  * Having the 'additional content section' for both anime and manga where user can see check lists for additional content outside the anime and the manga such as movies, ovas, light novels, special chapters. 
+  * Allowing the user to change their username and profile picture.
+  * Allosing the user to delete anime/manga of their list.
+  * Having a wide range of anime and manga options for user to add to their favorites. 
+  * Allowing the user to not have to scroll down to the checklist place their left off. 
+  * Providing the actual titles of episodes and chapters. 
+
+
 
 ### 2. Screen Archetypes
 * Login Screen
@@ -55,14 +84,9 @@ This apps allow you to keep track of the episodes you have seen from your favori
    * Allows user to create a new account
 
 * Home Screen 
-   * Allows switching between the manga and anime favorites list. 
-   * Allows user to click on an anime or manga and pop up new screens for episodes or chapters.
+   * Allows user to click on a manga and pop up new screen for chapters.
 
-* Home Screen  - click on an anime
-  * Provides a list of season for the anime selected
-  * After choosing a season provides a list of th episodes from that season for the user to mark off
-
-* Home Screen - click on a manga
+* Home Screen - MANGA click
   * Provides a list of chapters for the user to markoff.
 
 * Fandom Screen
@@ -71,8 +95,6 @@ This apps allow you to keep track of the episodes you have seen from your favori
    * Allows user to make a post and share it on the FANDOM thread of posts.
     
 * Search Screen
-   * Allows switching between the manga and anime titles lists. 
-   * Allows users to click on an anime, and have the option to add to their favorites list on their home screen. 
    * Allows users to click on a manga, and have the option to add to their favorites list on their home screen. 
 
 * Settings Screen
@@ -90,14 +112,13 @@ This apps allow you to keep track of the episodes you have seen from your favori
 **Flow Navigation** (Screen to Screen)
 
 * HOME 
-   * HOME -> ANIME -> SEASONS LIST -> SEASON'S EPISODES CHECKLIST
    * HOME -> MANGA -> MANGA CHAPTERS CHECKLIST
+  
 * FANDOM 
-   * FANDOM -> SELECTED ANIME/MANGA FANDOM PAGE
-   * FANDOM -> SELECTED ANIME/MANGA FANDOM PAGE -> CREATE A POST -> SELECTED ANIME/MANGA FANDOM PAGE
+   * FANDOM -> SELECTED MANGA FANDOM PAGE
+   * FANDOM -> SELECTED MANGA FANDOM PAGE -> CREATE A POST -> SELECTED MANGA FANDOM PAGE
 
 * SEARCH 
-   * SEARCH -> ANIME TITLES LIST -> SELECTED ANIME's DESCRIPTION
    * SEARCH -> MANGA TITLES LIST -> SELECTED MANGAS's DESCRIPTION
 
 * SETTINGS 
